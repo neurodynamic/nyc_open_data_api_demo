@@ -1,2 +1,9 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>API Response</h1>
+<% @json_objects.each do |obj| %>
+
+  <h2><%= obj['facilityname'] %></h2>
+  <p><strong>Type:</strong> <%= obj['facilitytypedesc'] %></p>
+  <p><strong>City:</strong> <%= obj['facilitycity'] %></p>
+  <p><strong>Phone:</strong> <%= obj['facilityphone'] %></p>
+
+<% end %>
